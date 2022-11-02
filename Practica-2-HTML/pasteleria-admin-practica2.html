@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pastelería Cherry</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    img {
+      width: 11%;
+      border: #000000 6px outset;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    /* Estilo de header */
+    header {
+      background-color: #FDD4D274;
+      padding: 10px;
+      text-align: center;
+      font-size: 35px;
+      color: #3E4677;
+    }
+
+    /* Crear 2 columnas con la misma posición en la fila */
+    nav {
+      float: left;
+      width: 30%;
+      height: 1400px;
+      /* only for demonstration, should be removed */
+      background: #ccc;
+      padding: 20px;
+    }
+
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    dt {
+      margin-top: 10px;
+    }
+
+    table, th, td {
+      margin-left: auto;
+      margin-right: auto;
+      width: max-content;
+      text-align: center;
+      border: 1px solid;
+      border-collapse: collapse;
+    }
+
+    article {
+      float: left;
+      padding: 20px;
+      width: 100%;
+      background-color: #FDD4D274;
+      text-align: center;
+      /*height: 300px;*/
+    }
+
+    form {
+      margin-top: 10px;
+    }
+
+    /* Clear floats after the columns */
+    section::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    /* Estilo de footer */
+    footer {
+      background-color: #FDD4D274;
+      padding: 10px;
+      text-align: center;
+      color: #3E4677;
+    }
+
+    /* Responsive layout */
+    @media (max-width: 600px) {
+
+      nav,
+      article {
+        width: 100%;
+        height: auto;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <img src="https://raw.githubusercontent.com/PatricioNovellino/Practicas-Launchx/main/Practica-2-HTML/Multimedia/Pasteleria-cherry-icono.png"
+       alt="Logo Pastelería Cherry"
+       style="float: left">
+  <h1>
+    Pastelería Cherry Admin
+  </h1>
+  <hr>
+</header>
+
+<section>
+  <article>
+    <section>
+
+      <h2>Stock disponible de sabores</h2>
+
+      <table>
+        <tr>
+          <th> Sabores </th>
+          <th> Stock </th>
+        </tr>
+        <tr>
+          <td> Vainilla </td>
+          <td> 10 </td>
+        </tr>
+        <tr>
+          <td> Chocolate </td>
+          <td> 8 </td>
+        </tr>
+      </table>
+
+      <h2>Stock disponible de adiciones</h2>
+      <table>
+        <tr>
+          <th> Adiciones </th>
+          <th> Stock </th>
+        </tr>
+
+        <tr>
+          <td> Figuras comestibles </td>
+          <td> 20 </td>
+        </tr>
+        <tr>
+          <td> Caramelo para moldear [kg] </td>
+          <td> 5 </td>
+        </tr>
+        <tr>
+          <td> Azucar impalpable [kg] </td>
+          <td> 3 </td>
+        </tr>
+      </table>
+      <hr>
+    </section>
+
+    <section>
+
+      <h2>Pedidos</h2>
+
+      <table>
+        <tr>
+          <th>Nombre</th>
+          <th>Teléfono</th>
+          <th>Email</th>
+          <th>Descripción</th>
+          <th>Adiciones</th>
+          <th>Pisos chocolate</th>
+          <th>Pisos vainilla</th>
+        </tr>
+        <tr>
+          <td>Candela</td>
+          <td>1111111111</td>
+          <td>candela@gmail.com</td>
+          <td>Torta dobo con figura de perrito</td>
+          <td>Figura</td>
+          <td>1</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>Patricio</td>
+          <td>2222222222</td>
+          <td>patricio@gmail.com</td>
+          <td>Torta Diablo con motivo 5</td>
+          <td>Motivo</td>
+          <td>2</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>Veronica</td>
+          <td>3333333333</td>
+          <td>veronica@gmail.com</td>
+          <td>Torta Oreo con caramelo 3</td>
+          <td>Caramelo</td>
+          <td>0</td>
+          <td>3</td>
+        </tr>
+      </table>
+      <hr>
+
+    </section>
+  </article>
+</section>
+
+
+<footer>
+  <p><b>@Derechos Reservados</b></p>
+</footer>
+
+</body>
+</html>
